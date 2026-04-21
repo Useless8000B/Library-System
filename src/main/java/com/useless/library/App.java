@@ -1,7 +1,7 @@
-package com.useless;
+package com.useless.library;
 
-import com.useless.ui.UI;
-import com.useless.utils.Format;
+import com.useless.library.ui.UI;
+import com.useless.library.utils.Format;
 
 public class App {
 	public static void main(String[] args) {

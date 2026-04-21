@@ -1,4 +1,4 @@
-package com.useless.models;
+package com.useless.library.models;
 
 public class SimpleBook implements Book{
 	private final String title;

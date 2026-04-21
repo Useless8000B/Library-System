@@ -1,4 +1,4 @@
-package com.useless.utils;
+package com.useless.library.utils;
 
 public class Format {
 	public static void Line() {

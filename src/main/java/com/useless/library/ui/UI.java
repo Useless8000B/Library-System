@@ -1,11 +1,11 @@
-package com.useless.ui;
+package com.useless.library.ui;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.useless.models.Book;
-import com.useless.models.SimpleBook;
+import com.useless.library.models.Book;
+import com.useless.library.models.SimpleBook;
 
 public class UI {
 	private static final Scanner input = new Scanner(System.in);
