@@ -8,8 +8,7 @@ public class UI implements UiInterface {
 	private static Scanner input = new Scanner(System.in);
 	private static UI _instance;
 
-	private UI() {
-	}
+	private UI() {}
 
 	@Override
 	public void showMenu() {
