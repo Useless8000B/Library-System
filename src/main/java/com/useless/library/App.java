@@ -1,19 +1,19 @@
 package com.useless.library;
 
 import com.useless.library.controllers.BookController;
-import com.useless.library.interfaces.BookControllerInterface;
-import com.useless.library.interfaces.BookRepositoryInterface;
-import com.useless.library.interfaces.UiInterface;
+import com.useless.library.controllers.BookControllerImpl;
 import com.useless.library.repositories.BookRepository;
-import com.useless.library.ui.UI;
+import com.useless.library.repositories.BookRepositoryImpl;
+import com.useless.library.ui.Ui;
+import com.useless.library.ui.UiImpl;
 import com.useless.library.utils.Format;
 
 public class App {
 	private static boolean running = true;
 	private static int option;
-	private static UiInterface _UI = UI.getInstance();
-	private static BookRepositoryInterface _bookRepository = BookRepository.getInstance();
-	private static BookControllerInterface _bookController = BookController.getInstance(_bookRepository);
+	private static Ui _UI = UiImpl.getInstance();
+	private static BookRepository _bookRepository = BookRepositoryImpl.getInstance();
+	private static BookController _bookController = BookControllerImpl.getInstance(_bookRepository);
 
 	public static void main(String[] args) {
 

@@ -2,13 +2,11 @@ package com.useless.library.ui;
 
 import java.util.Scanner;
 
-import com.useless.library.interfaces.UiInterface;
-
-public class UI implements UiInterface {
+public class UiImpl implements Ui {
 	private static Scanner input = new Scanner(System.in);
-	private static UI _instance;
+	private static UiImpl _instance;
 
-	private UI() {}
+	private UiImpl() {}
 
 	@Override
 	public void showMenu() {
@@ -59,9 +57,9 @@ public class UI implements UiInterface {
 		return name;
 	}
 
-	public static synchronized UI getInstance() {
+	public static synchronized UiImpl getInstance() {
 		if (_instance == null) {
-			_instance = new UI();
+			_instance = new UiImpl();
 		}
 
 		return _instance;
